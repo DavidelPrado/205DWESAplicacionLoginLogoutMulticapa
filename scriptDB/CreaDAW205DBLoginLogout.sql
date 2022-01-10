@@ -1,6 +1,8 @@
 --Creacion de base de datos DB205DWESLoginLogout
 create database if not exists DB205DWESLoginLogout;
 
+use DB205DWESLoginLogout;
+
 --Creacion de la tabla Usuario en la base de datos DB205DWESLoginLogout
 create table if not exists T01_Usuario(
     T01_CodUsuario varchar(8),

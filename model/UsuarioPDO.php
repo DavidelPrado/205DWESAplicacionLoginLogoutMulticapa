@@ -3,12 +3,11 @@
     * @author: David del Prado Losada
     * @version: v1.0
     * Created on: 02/01/2022
-    * 
     */
 
     class UsuarioPDO implements UsuarioDB{
         public static function validarUsuario($codUsuario, $password){
-            $consulra = <<<PDO
+            $consulta = <<<PDO
                 SELECT T01_FechaHoraUltimaConexion FROM T01_Usuario
                 WHERE T01_CodUsuario='{$codUsuario}' AND
                 T01_Password=SHA2("{$codUsuario}{$password}", 256);

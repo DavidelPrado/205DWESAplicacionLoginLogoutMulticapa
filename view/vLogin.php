@@ -12,7 +12,7 @@
         <input type='text' name='usuario'/><br><br>
 
         <label>Contraseña:</label><br>
-        <input type='password' name='contraseña'/>
+        <input type='password' name='password'/>
         <br><br>
         <input type='submit' name='login' value='Login'/>
     </fieldset>
