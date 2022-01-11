@@ -8,7 +8,14 @@
 
     //Constantes de la aplicación.
     include './config/configApp.php';
+   
+    //Se inicia o recupera la sesión
+    session_start();
 
     //Para mostrar la ventana del login, llama al controlador del mismo.
-    include $aControladores["login"];
+    if(isset($_SESSION["paginaEnCurso"])){
+        include $_SESSION["paginaEnCurso"];
+    }else{
+        include $aControladores["login"];
+    }
 ?>

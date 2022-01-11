@@ -6,28 +6,28 @@
     * 
     */
 
-    if(!isset($_SESSION['usuarioDAW204AppLoginLogout'])){
-        include $aControladores['login'];
+    if(!isset($_SESSION['usuarioDAW205AppLoginLogout'])){
+        header('location: ./index.php');
         exit;
     }
 
     if(isset($_REQUEST['logout'])){
-        session_unset();
         session_destroy();
-        
         include $aControladores['login'];
+        header('location: ./index.php');
+        exit;
     }
 
     if(isset($_REQUEST['login'])){
         $sSelect = <<<QUERY
             SELECT T01_DescUsuario, T01_NumConexiones, T01_ImagenUsuario FROM T01_Usuario
-            WHERE T01_CodUsuario='{$_SESSION['usuarioDAW204AppLoginLogout']}';
+            WHERE T01_CodUsuario='{$_SESSION['usuarioDAW205AppLoginLogout']}';
         QUERY;
         $oResultado = DBPDO::ejecutarConsulta($sSelect)->fetchObject();
 
         $iNumConexiones = $oResultado->T01_NumConexiones; 
     }
-
-    $vistaEnCurso = 'inicio';
+    
+    $vistaEnCurso='inicio';
     include $aVistas['layout'];
 ?>

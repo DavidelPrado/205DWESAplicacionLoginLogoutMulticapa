@@ -5,7 +5,7 @@
     * Created on: 02/01/2022
     */
 ?>
-<h1>Login</h1>
+<h1>Inicio</h1>
 <div>Bienvenido</div>
 <form>
     <input type='submit' name='logout' value='Logout'/>

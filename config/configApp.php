@@ -8,6 +8,13 @@
 
     include 'core/210322ValidacionFormularios.php';
 
+    //Se incluye la lógica del modelo
+    require_once 'model/DB.php';
+    require_once 'model/UsuarioDB.php';
+    require_once 'model/DBPDO.php';
+    require_once 'model/Usuario.php';
+    require_once 'model/UsuarioPDO.php';
+    
     //Definir constantes
     define("OBLIGATORIO", 1);
     define("OPCIONAL", 0);
