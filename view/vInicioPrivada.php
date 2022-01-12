@@ -8,7 +8,7 @@
 <div class="vInicio">
     <h1>Inicio</h1>
     <?php
-        echo 'Bienvenido '.$descUsuario.' es la '.$numConexiones.' vez que se conecta y su ultima conexion fue '.$_SESSION['FechaHoraUltimaConexionAnterior'].'';
+        echo 'Bienvenido '.$aVInicio['descUsuario'].' es la '.$aVInicio['numConexiones'].' vez que se conecta y su ultima conexion fue '.$_SESSION['FechaHoraUltimaConexionAnterior'].'';
     ?>
     <br><br>
     <form>

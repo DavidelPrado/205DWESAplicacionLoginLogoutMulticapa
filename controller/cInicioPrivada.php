@@ -6,13 +6,14 @@
     */
 
     if(!isset($_SESSION['usuarioDAW205AppLoginLogout'])){
+        $_SESSION['paginaEnCurso'] = $aControladores['login'];
         header('location: ./index.php');
         exit;
     }
 
     if(isset($_REQUEST['logout'])){
         session_destroy();
-        include $aControladores['login'];
+        include $aControladores['inicioPublica'];
         header('location: ./index.php');
         exit;
     }
@@ -36,8 +37,11 @@
     QUERY;
     $oResultado = DBPDO::ejecutarConsulta($select)->fetchObject();
 
-    $descUsuario = $oResultado->T01_DescUsuario;
-    $numConexiones = $oResultado->T01_NumConexiones; 
+    $aVInicio = [
+        'descUsuario' => $oResultado->T01_DescUsuario,
+        'numConexiones' => $oResultado->T01_NumConexiones 
+    ];
+    
     
     $vistaEnCurso='inicio';
     include $aVistas['layout'];

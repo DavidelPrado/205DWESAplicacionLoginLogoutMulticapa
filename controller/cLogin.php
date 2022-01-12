@@ -19,6 +19,13 @@
             }
         }
     }
+    
+    if(isset($_REQUEST['cancelar'])){
+        session_destroy();
+        include $aControladores['inicioPublica'];
+        header('location: ./index.php');
+        exit;
+    }
 
     $vistaEnCurso='login';
     include $aVistas['layout'];
