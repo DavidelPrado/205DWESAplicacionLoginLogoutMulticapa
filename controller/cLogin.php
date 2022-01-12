@@ -13,7 +13,7 @@
                 $_SESSION['usuarioDAW205AppLoginLogout'] = $_REQUEST["usuario"];
                 $_SESSION['FechaHoraUltimaConexionAnterior'] = $oUsuario->T01_FechaHoraUltimaConexion;
                 
-                $_SESSION['paginaEnCurso'] =  $aControladores['inicio'];
+                $_SESSION['paginaEnCurso'] = $aControladores['inicio'];
                 header('location: ./index.php');
                 exit;
             }

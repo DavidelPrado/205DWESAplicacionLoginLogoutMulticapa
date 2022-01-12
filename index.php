@@ -16,6 +16,6 @@
     if(isset($_SESSION["paginaEnCurso"])){
         include $_SESSION["paginaEnCurso"];
     }else{
-        include $aControladores["login"];
+        include $aControladores["inicioPublica"];
     }
 ?>

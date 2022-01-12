@@ -9,11 +9,11 @@
     include 'core/210322ValidacionFormularios.php';
 
     //Se incluye la lógica del modelo
-    require_once 'model/DB.php';
-    require_once 'model/UsuarioDB.php';
-    require_once 'model/DBPDO.php';
-    require_once 'model/Usuario.php';
-    require_once 'model/UsuarioPDO.php';
+    include 'model/DB.php';
+    include 'model/UsuarioDB.php';
+    include 'model/DBPDO.php';
+    include 'model/Usuario.php';
+    include 'model/UsuarioPDO.php';
     
     //Definir constantes
     define("OBLIGATORIO", 1);
@@ -25,14 +25,20 @@
 
     //Array de los controladores
     $aControladores = [
+        'inicioPublica' => 'controller/cInicioPublica.php',
         'login' => 'controller/cLogin.php',
-        'inicio' => 'controller/cInicio.php'
+        'inicio' => 'controller/cInicioPrivada.php',
+        'detalle' => 'controller/cDetalle.php',
+        'WIP' => 'controller/cWIP.php'
     ];
 
     //Array de las vistas
     $aVistas = [
+        'inicioPublica' => 'view/vInicioPublica.php',
         'layout' => 'view/Layout.php',
         'login' => 'view/vLogin.php',
-        'inicio' => 'view/vInicio.php'
+        'inicio' => 'view/vInicioPrivada.php',
+        'detalle' => 'view/vDetalle.php',
+        'WIP' => 'view/vWIP.php'
     ];
 ?>
