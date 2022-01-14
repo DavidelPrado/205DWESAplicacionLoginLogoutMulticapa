@@ -6,7 +6,8 @@
     */
     
     //Comprobar si se ha pulsado el boton de volver
-    if(isset($_REQUEST['volver'])){  
+    if(isset($_REQUEST['volver'])){ 
+        $_SESSION['paginaAnterior'] = $aControladores['detalle'];
         $_SESSION['paginaEnCurso'] = $aControladores['inicio'];
         header('location: ./index.php');
         exit;

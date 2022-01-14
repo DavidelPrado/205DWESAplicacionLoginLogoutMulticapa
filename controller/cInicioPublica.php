@@ -12,6 +12,6 @@
         exit;
     }
     
-    $vistaEnCurso='inicioPublica';
+     $vistaEnCurso='inicioPublica';
     include $aVistas['layout'];
 ?>
