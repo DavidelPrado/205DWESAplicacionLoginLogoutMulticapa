@@ -24,5 +24,52 @@
             $this->$fechaHoraUltimaConexionAnterior = $fechaHoraUltimaConexionAnterior;
             $this->perfil = $perfil;
         }
+        
+        
+        function getCodUsuario(){
+            return $this->codUsuario;
+        }
+        function getPassword(){
+            return $this->password;
+        }
+        function getDescUsuario(){
+            return $this->descUsuario;
+        }
+        function getNumConexiones(){
+            return $this->numConexiones;
+        }
+        function getFechaHoraUltimaConexion(){
+            return $this->fechaHoraUltimaConexion;
+        }
+        function getFechaHoraUltimaConexionAnterior(){
+            return $this->fechaHoraUltimaConexionAnterior;
+        }
+        function getPerfil(){
+            return $this->perfil;
+        }
+        
+        function setCodUsuario($codUsuario){
+           $this->codUsuario=$codUsuario; 
+        }
+        function setPassword($password){
+            $this->password=$password;
+        }
+        function setDescUsuario($descUsuario){
+            $this->descUsuario=$descUsuario;
+        }
+        function setNumConexiones($numConexiones){
+            $this->numConexiones=$numConexiones;
+        }
+        function setFechaHoraUltimaConexion($fechaHoraUltimaConexion){
+            $this->fechaHoraUltimaConexion=$fechaHoraUltimaConexion;
+        }
+        function setFechaHoraUltimaConexionAnterior($fechaHoraUltimaConexionAnterior){
+            $this->fechaHoraUltimaConexionAnterior=$fechaHoraUltimaConexionAnterior;
+        }
+        function setPerfil($perfil){
+            $this->perfil=$perfil;
+        }
+        
+        
     }
 ?>

@@ -1,8 +1,9 @@
 <?php
     /*
     * @author: David del Prado Losada
+    * @since: 02/01/2022
     * @version: v1.0
-    * Created on: 02/01/2022
+    * 
     * Controlador de la aplicación
     */
 
@@ -12,9 +13,8 @@
     //Se inicia o recupera la sesión
     session_start();
 
-    if(isset($_SESSION["paginaEnCurso"])){
-        include $_SESSION["paginaEnCurso"];
-    }else{
-        include $aControladores["inicioPublica"];
+    if(!isset($_SESSION['paginaEnCurso'])){
+        $_SESSION['paginaEnCurso'] = 'inicioPublica';
     }
+    include $aControladores[$_SESSION['paginaEnCurso']];
 ?>

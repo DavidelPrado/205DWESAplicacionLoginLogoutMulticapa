@@ -8,7 +8,7 @@
         $DB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
         $sql=<<<PDO
-            create table if not exists T01_Usuario(
+            create table if not exists dbs4868796.T01_Usuario(
                 T01_CodUsuario varchar(8),
                 T01_Password varchar(64) NOT NULL,
                 T01_DescUsuario varchar(255) NOT NULL,
@@ -19,7 +19,7 @@
                 primary key(T01_CodUsuario)
             )ENGINE=INNODB;
                 
-            create table T02_Departamento(
+            create table dbs4868796.T02_Departamento(
                 T02_CodDepartamento varchar(3),
                 T02_DescDepartamento varchar(255) NOT NULL,
                 T02_FechaCreacionDepartamento timestamp,

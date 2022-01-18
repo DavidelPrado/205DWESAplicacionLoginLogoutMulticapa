@@ -7,11 +7,10 @@
     */
 
     if(isset($_REQUEST['iniciar'])){
-        $_SESSION['paginaEnCurso'] = $aControladores['login'];
+        $_SESSION['paginaEnCurso'] = 'login';
         header('location: ./index.php');
         exit;
     }
     
-     $vistaEnCurso='inicioPublica';
     include $aVistas['layout'];
 ?>

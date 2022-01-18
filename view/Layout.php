@@ -9,7 +9,7 @@
     </head>
     <body>
         <?php 
-            include $aVistas[$vistaEnCurso];
+            include $aVistas[$_SESSION['paginaEnCurso']];
         ?>
         <footer>
             <table>

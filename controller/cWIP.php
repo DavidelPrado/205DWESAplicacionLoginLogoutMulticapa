@@ -12,6 +12,5 @@
         exit;
     }
 
-    $vistaEnCurso='WIP';
     include $aVistas['layout'];
 ?>
