@@ -33,10 +33,9 @@
     }
 
     
-    
     $select = <<<QUERY
         SELECT T01_DescUsuario, T01_NumConexiones FROM T01_Usuario
-        WHERE T01_CodUsuario='{$_SESSION['usuarioDAW205AppLoginLogout']}';
+        WHERE T01_CodUsuario='{$_SESSION['usuarioDAW205AppLoginLogout']->getCodUsuario()}';
     QUERY;
     $oResultado = DBPDO::ejecutarConsulta($select)->fetchObject();
 
