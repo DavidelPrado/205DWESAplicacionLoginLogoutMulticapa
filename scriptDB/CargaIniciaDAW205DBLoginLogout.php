@@ -8,6 +8,7 @@
         $DB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
         $sql=<<<PDO
+            USE dbs4868796;
             insert into T01_Usuario(T01_CodUsuario, T01_Password, T01_DescUsuario) VALUES 
                 ('albertoF',SHA2('albertoFpaso',256),'AlbertoF'),
                 ('outmane',SHA2('outmanepaso',256),'Outmane'),

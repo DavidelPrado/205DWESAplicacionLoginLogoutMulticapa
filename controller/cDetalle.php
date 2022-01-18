@@ -7,12 +7,11 @@
     
     //Comprobar si se ha pulsado el boton de volver
     if(isset($_REQUEST['volver'])){ 
-        $_SESSION['paginaAnterior'] = $aControladores['detalle'];
-        $_SESSION['paginaEnCurso'] = $aControladores['inicio'];
+        $_SESSION['paginaAnterior'] = 'detalle';
+        $_SESSION['paginaEnCurso'] = 'inicio';
         header('location: ./index.php');
         exit;
     }
 
-    $vistaEnCurso='detalle';
     include $aVistas['layout'];
 ?>

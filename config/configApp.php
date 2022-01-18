@@ -1,8 +1,9 @@
 <?php
     /*
     * @author: David del Prado Losada
+    * @since: 02/01/2022
     * @version: v1.0
-    * Created on: 02/01/2022
+    * 
     * Controlador de la aplicación
     */
 

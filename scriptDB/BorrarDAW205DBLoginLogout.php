@@ -8,6 +8,7 @@
         $DB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
         $sql=<<<PDO
+            USE dbs4868796;
             drop table if exists T01_Usuario;
             drop table if exists T02_Departamento;
         PDO;

@@ -20,13 +20,12 @@
                 $oUsuario=UsuarioPDO::registrarUltimaConexion($oUsuario);
                 $_SESSION['usuarioDAW205AppLoginLogout'] = $oUsuario;
                 
-                $_SESSION['paginaEnCurso'] = $aControladores['inicio'];
+                $_SESSION['paginaEnCurso'] = 'inicio';
                 header('location: ./index.php');
                 exit;
             }
         }
     }
 
-    $vistaEnCurso='login';
     include $aVistas['layout'];
 ?>

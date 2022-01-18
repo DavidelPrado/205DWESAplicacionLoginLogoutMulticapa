@@ -12,22 +12,23 @@
     }
 
     if(isset($_REQUEST['logout'])){
+        session_unset();
         session_destroy();
-        include $aControladores['inicioPublica'];
+
         header('location: ./index.php');
         exit;
     }
     
     if(isset($_REQUEST['detalle'])){
-        $_SESSION['paginaAnterior'] = $aControladores['inicio'];
-        $_SESSION['paginaEnCurso'] = $aControladores['detalle'];
+        $_SESSION['paginaAnterior'] = 'inicio';
+        $_SESSION['paginaEnCurso'] = 'detalle';
         header('location: ./index.php');
         exit;
     }
     
     if(isset($_REQUEST['mtoDep'])){
-        $_SESSION['paginaAnterior'] = $aControladores['inicio'];
-        $_SESSION['paginaEnCurso'] = $aControladores['WIP'];
+        $_SESSION['paginaAnterior'] = 'inicio';
+        $_SESSION['paginaEnCurso'] = 'WIP';
         header('location: ./index.php');
         exit;
     }
@@ -44,6 +45,5 @@
         'numConexiones' => $oResultado->T01_NumConexiones 
     ];
     
-    $vistaEnCurso='inicio';
     include $aVistas['layout'];
 ?>

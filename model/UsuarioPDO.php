@@ -23,6 +23,18 @@
             }
         }
         
+        public static function altaUsuario(){
+            
+        }
+        
+        public static function modificarUsuario(){
+            
+        }
+        
+        public static function borrarUsuario(){
+            
+        }
+        
         public static function registrarUltimaConexion($oUsuario){
             //Guardo la hora actual
             $oDateTime = new DateTime();
