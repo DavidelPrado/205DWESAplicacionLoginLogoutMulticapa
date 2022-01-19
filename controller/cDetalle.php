@@ -1,11 +1,12 @@
 <?php
-    /*
+    /**
     * @author: David del Prado Losada
+    * @since: 12/01/2022
     * @version: v1.0
-    * Created on: 12/01/2022
+    * 
+    * Controlador de la ventana detalle
     */
     
-    //Comprobar si se ha pulsado el boton de volver
     if(isset($_REQUEST['volver'])){ 
         $_SESSION['paginaAnterior'] = 'detalle';
         $_SESSION['paginaEnCurso'] = 'inicio';

@@ -1,8 +1,10 @@
 <?php
     /*
     * @author: David del Prado Losada
+    * @since: 02/01/2022
     * @version: v1.0
-    * Created on: 02/01/2022
+    * 
+    * Ventana con el formulario de login
     */
 ?>
 <h1>Login</h1>

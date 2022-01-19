@@ -1,8 +1,10 @@
 <?php
     /*
     * @author: David del Prado Losada
+    * @since: 12/01/2022
     * @version: v1.0
-    * Created on: 12/01/2022
+    * 
+    * Ventana de bienvenida al usuario anonimo
     */
 ?>
 <div class="vInicio">
