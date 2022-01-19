@@ -1,8 +1,10 @@
 <?php
     /*
     * @author: David del Prado Losada
+    * @since: 02/01/2022
     * @version: v1.0
-    * Created on: 02/01/2022
+    * 
+    * Clase para el manejo de usuarios en la base de datos
     */
 
     class UsuarioPDO implements UsuarioDB{

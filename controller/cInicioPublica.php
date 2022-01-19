@@ -1,9 +1,10 @@
 <?php
     /*
     * @author: David del Prado Losada
+    * @since: 12/01/2022
     * @version: v1.0
-    * Created on: 12/01/2022
     * 
+    * Controlador de la ventana de inicio publica
     */
 
     if(isset($_REQUEST['iniciar'])){

@@ -15,6 +15,7 @@
     include 'model/DBPDO.php';
     include 'model/Usuario.php';
     include 'model/UsuarioPDO.php';
+    include 'model/AppError.php';
     
     //Definir constantes
     define("OBLIGATORIO", 1);
@@ -30,7 +31,8 @@
         'login' => 'controller/cLogin.php',
         'inicio' => 'controller/cInicioPrivada.php',
         'detalle' => 'controller/cDetalle.php',
-        'WIP' => 'controller/cWIP.php'
+        'WIP' => 'controller/cWIP.php',
+        'error' => 'controller/cError.php'
     ];
 
     //Array de las vistas
@@ -40,6 +42,7 @@
         'login' => 'view/vLogin.php',
         'inicio' => 'view/vInicioPrivada.php',
         'detalle' => 'view/vDetalle.php',
-        'WIP' => 'view/vWIP.php'
+        'WIP' => 'view/vWIP.php',
+        'error' => 'view/vError.php'
     ];
 ?>

@@ -1,8 +1,10 @@
 <?php
     /*
     * @author: David del Prado Losada
+    * @since: 02/01/2022
     * @version: v1.0
-    * Created on: 02/01/2022
+    * 
+    * Ventana de bienvenida al usuario autenticado
     */
 ?>
 <div class="vInicio">
@@ -14,6 +16,7 @@
     <form>
         <input type='submit' name='mtoDep' value='Mantenimiento Departamentos'/>
         <input type='submit' name='detalle' value='Detalle'/>
+        <input type='submit' name='error' value='Provocar error'/>
         <input type='submit' name='logout' value='Cerrar sesión'/>
     </form>
 </div>
