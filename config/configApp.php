@@ -21,7 +21,7 @@
     define("OBLIGATORIO", 1);
     define("OPCIONAL", 0);
     define("MIN_TAMANIO", 0);
-
+    
     //Conexion con la base de datos.
     include 'config/confDB.php';
 

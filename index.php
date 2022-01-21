@@ -1,12 +1,12 @@
 <?php
-    /*
+/*
     * @author: David del Prado Losada
     * @since: 02/01/2022
     * @version: v1.0
     * 
     * Controlador de la aplicación
     */
-
+   
     //Constantes de la aplicación.
     include './config/configApp.php';
    
@@ -17,4 +17,4 @@
         $_SESSION['paginaEnCurso'] = 'inicioPublica';
     }
     include $aControladores[$_SESSION['paginaEnCurso']];
-?>
+ ?>

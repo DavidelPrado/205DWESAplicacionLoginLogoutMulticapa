@@ -41,17 +41,17 @@
             //Guardo la hora actual
             $oDateTime = new DateTime();
             
+            $oUsuario->setFechaHoraUltimaConexionAnterior($oUsuario->getFechaHoraUltimaConexion());
+            $oUsuario->setFechaHoraUltimaConexion($oDateTime->format("y-m-d h:i:s"));
+            $oUsuario->setNumConexiones($oUsuario->getNumConexiones()+1);
+            
             $consulta = <<<PDO
-                UPDATE T01_Usuario SET T01_NumConexiones=T01_NumConexiones+1,
-                T01_FechaHoraUltimaConexion = '{$oDateTime->format("y-m-d h:i:s")}'
+                UPDATE T01_Usuario SET T01_NumConexiones= '{$oUsuario->getNumConexiones()}',
+                T01_FechaHoraUltimaConexion = '{$oUsuario->getFechaHoraUltimaConexion()}'
                 WHERE T01_CodUsuario='{$oUsuario->getCodUsuario()}';
             PDO;
 
             DBPDO::ejecutarConsulta($consulta);
-            
-            $oUsuario->setFechaHoraUltimaConexionAnterior($oUsuario->getFechaHoraUltimaConexion());
-            $oUsuario->setFechaHoraUltimaConexion($oDateTime->format("y-m-d h:i:s"));
-            $oUsuario->setNumConexiones($oUsuario->getNumConexiones()+1);
             
             return $oUsuario;
         }

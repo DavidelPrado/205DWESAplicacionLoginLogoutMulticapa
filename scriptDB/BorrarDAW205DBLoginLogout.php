@@ -1,5 +1,5 @@
 <?php
-    include '../config/confDBPDO.php';
+    include '../config/confDB.php';
 
     try {
         //Conectar a la base de datos
